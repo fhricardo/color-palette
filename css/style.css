@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.family-container {
+    width: 1200px;
+
+}
+
+.family {
+    width: 1110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid #b3b3b3;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.family .title {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.family .title::before {
+    content: "Paletas ";
+}
+
+.palette {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ECECEC;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.palette h4 {
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.colors {
+    display: flex;
+}
+
+.color {
+    width: 40px;
+    height: 140px;
+    display: flex;
+}
+
+.color-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FAFAFA;
+    text-shadow: 0px 0px 2px black;
+    transform: rotate(-90deg);
+    align-self: center;
+    height: 40px;
+}
